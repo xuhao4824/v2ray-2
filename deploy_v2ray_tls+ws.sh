@@ -49,14 +49,14 @@ cat  <<EOF >config.json
     "streamSettings": {
       		"network":"ws",
         	"wsSettings": {
-            "path": "/runToFreedom"
+            "path": "/redemption"
           }
       },
 
     "settings": {
       "clients": [
         {
-          "id": "1111aaaa-22bb-33cc-44dd-555555eeeeee",
+          "id": "f3ee4426-90c6-4343-a36b-bf5263de3892",
           "level": 1,
           "alterId": 64,
 	        "security": "auto"
@@ -180,7 +180,7 @@ EOF
 docker build -t v2ray .
 
 # 第九步：创建启动v2ray容器
-docker run -d -it --name v2ray -p 443:443 v2ray
+docker run -d -it --name v2ray -p 443:443 -p 80:80 v2ray
 
 # 第十步：打开443端口
 ufw allow 443

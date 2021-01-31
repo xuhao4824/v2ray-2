@@ -34,14 +34,14 @@ EOF
                     "clients": [
                         {
                             "id": "${UUID}",
-                            "alterId": 4
+                            "alterId": 64
                         }
                     ]
                 },
                 "streamSettings": {
                     "network":"ws",
                     "wsSettings": {
-                        "path": ""
+                        "path": "/"
                     }
                 }
             }
@@ -108,7 +108,7 @@ install(){
       "add": "ibmyes.us-south.cf.appdomain.cloud",
       "port": "443",
       "id": "${UUID}",
-      "aid": "4",
+      "aid": "64",
       "net": "ws",
       "type": "none",
       "host": "",
